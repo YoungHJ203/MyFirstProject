@@ -2,14 +2,16 @@
 #include<Windows.h>
 #include<iostream>
 using namespace std;
-
+// Key Event
 class KeyEvent {
 public:
+	// constructor 
 	KeyEvent() {
 		hln = GetStdHandle(STD_INPUT_HANDLE);
 		EventCount = 1;
 	}
-
+	
+	// get key 
 	int getKey() {
 		ReadConsoleInput(hln,&lnRec,1,&NumRead);
 		if (lnRec.EventType == KEY_EVENT) {
