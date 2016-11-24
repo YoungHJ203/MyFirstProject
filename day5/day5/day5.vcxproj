@@ -149,6 +149,7 @@
     <ClInclude Include="Frame.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ExArray.h" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
